@@ -1,0 +1,5 @@
+<div ng-repeat="Post in Posts">
+	<a ng-href="{{ Post.url }}">{{ Post.title }}</a>
+	<a ng-href="#/posts/{{ Post.$id }}">comments</a>
+	<a ng-click="deletePost(Post)">delete</a>
+</div>

@@ -1,0 +1,14 @@
+<nav role="navigation">
+  
+  <a href="#">ng-news</a>
+ 
+  <div ng-controller="NavCtrl">
+    <form role="search" ng-submit="submitPost()">
+        <input type="text" placeholder="Title" ng-model="post.title">
+    
+      <input type="text" placeholder="Link" ng-model="post.url">
+     
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</nav>
